@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% block content %}
+<center>
+  <div class="read_goverment_container">
+    <div class="read_goverment_card">
+
+      <img class="read_goverment_img" src="https://www.leadwithprimitive.com/hubfs/PS_Blog_Images/2020/05_May/01_Social_Media_Management_vs_Social_Media_Marketing/Social-Media-Management-vs-Social-Media-Marketing.jpg" alt="Government Image">
+
+      <h2 class="data_politics_aa1">PRESS-RELEASE-{{ data.id }}</h2>
+      <h2 class="data_politics_aa2">{{ data.title }}</h2>
+      <p class="data_politics_desc">{{ data.desc|safe }}</p>
+
+      <a class="back_button" href="{% url 'social_media' %}">← Back to Social Media</a>
+    </div>
+  </div>
+</center>
+{% endblock %}

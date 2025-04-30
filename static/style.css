@@ -1,0 +1,474 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://thesentry.org/wp-content/themes/the-sentry/images/bg-page.jpg');
+    background-size: cover;
+    /* Covers the entire screen */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+.nav_bar {
+    width: 100%;
+    display: flex;
+    background-color: rgb(10, 1, 1);
+    height: 60px;
+    border: 1px solid black;
+    /* position: fixed; */
+}
+
+.logo {
+    width: 10%;
+    color: white;
+    /* border: 1px solid white; */
+    /* margin-left: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 70px; */
+}
+
+.links,
+.a1,
+.a2,
+.a3,
+.a4,
+.a5,
+.a6,
+.a7,
+.a8,
+.a9,
+.a10 {
+    color: white;
+    text-decoration: none;
+    /* font-size: 20px; */
+    gap: 30px;
+    /* border: 1px solid white; */
+    font-family: MD Primer Bold, Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: .8rem;
+    font-style: normal;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+.a1:hover,
+.a2:hover,
+.a3:hover,
+.a4:hover,
+.a5:hover,
+.a6:hover,
+.a7:hover,
+.a8:hover,
+.a9:hover,
+.a10:hover {
+    background-color: yellow;
+    color: black;
+    cursor: grab;
+}
+
+.home {
+    /* border: 1px solid black; */
+    /* background-color: rgb(105, 98, 98); */
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image1 {
+    position: relative;
+    display: inline-block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 65%;
+    /* left: 10%; */
+    color: rgba(232, 231, 231, 0.836);
+    font-size: 70px;
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid yellow; */
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+.article {
+    /* border: 1px solid black; */
+    height: 250px;
+    width: 60%;
+    background-color: rgb(255, 250, 250);
+    padding: 40px;
+    line-height: 1.6;
+    border-radius: 70px;
+}
+
+.article:hover {
+    background-color: #5398c0;
+    cursor: pointer;
+}
+
+.read {
+    text-decoration: none;
+    /* border: 1px solid black; */
+    background-color: rgb(139, 85, 85);
+    color: rgb(163, 204, 103);
+}
+
+.data_a1 {
+    border: 1px solid black;
+    height: 300px;
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 60px;
+}
+
+.data_aa1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.data_aa2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+
+/* Back Button */
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.back1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* about_page CSS */
+
+.about_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 400px; */
+    /* border: 5px solid white; */
+}
+
+.about_image_a1 {
+    height: 200px;
+    /* position: absolute; */
+    /* margin-bottom: 269px; */
+    /* border: 5px solid white; */
+}
+
+.article_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+.about_text {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50px;
+    /* border: 1px solid black; */
+}
+
+.article_p_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+.article_p {
+    font: 14px/1.3 'DINWeb', 'Ropa Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+
+/*CSS FOR THE EDUACTION_PAGE */
+
+.article_eduaction {}
+
+.eduaction_a_tag {
+    text-decoration: none;
+    color: inherit;
+    cursor: grab;
+}
+
+.eduaction_1 {
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article_eduaction {
+    border: 1px solid black;
+    height: 250px;
+    width: 60%;
+    background-color: rgb(255, 250, 250);
+    padding: 40px;
+    line-height: 1.6;
+    border-radius: 70px;
+}
+
+.article_eduaction:hover {
+    background-color: #5398c0;
+    cursor: grab;
+}
+
+
+/* CSS FOR A SOCIAL_MEDIA */
+
+.social_media_a_tag {
+    text-decoration: none;
+    color: inherit;
+    cursor: grab;
+}
+
+.social_media_1 {
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article_social_media {
+    border: 1px solid black;
+    height: 250px;
+    width: 60%;
+    background-color: rgb(255, 250, 250);
+    padding: 40px;
+    line-height: 1.6;
+    border-radius: 70px;
+}
+
+.article_social_media:hover {
+    background-color: #5398c0;
+    cursor: grab;
+}
+
+
+/* CSS FOR A BUSINESS */
+
+.business_a_tag {
+    text-decoration: none;
+    color: inherit;
+    cursor: grab;
+}
+
+.business_1 {
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article_business {
+    border: 1px solid black;
+    height: 250px;
+    width: 60%;
+    background-color: rgb(255, 250, 250);
+    padding: 40px;
+    line-height: 1.6;
+    border-radius: 70px;
+}
+
+.article_business:hover {
+    background-color: #5398c0;
+    cursor: grab;
+}
+
+
+/* CSS FOR A POLITICS */
+
+.politics_a_tag {
+    text-decoration: none;
+    color: inherit;
+    cursor: grab;
+}
+
+.politics_1 {
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article_politics {
+    border: 1px solid black;
+    height: 250px;
+    width: 60%;
+    background-color: rgb(255, 250, 250);
+    padding: 40px;
+    line-height: 1.6;
+    border-radius: 70px;
+}
+
+.article_politics:hover {
+    background-color: #5398c0;
+    cursor: grab;
+}
+
+
+/* CSS FOR GOVERMENT */
+
+.government_a_tag {
+    text-decoration: none;
+    color: inherit;
+    cursor: grab;
+}
+
+.government_1 {
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.government_politics {
+    border: 1px solid black;
+    height: 250px;
+    width: 60%;
+    background-color: rgb(255, 250, 250);
+    padding: 40px;
+    line-height: 1.6;
+    border-radius: 70px;
+}
+
+.government_politics:hover {
+    background-color: #5398c0;
+    cursor: grab;
+}
+
+
+/* CSS FOR A GIVERMENT READ PAGE */
+
+.read_goverment_container {
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.read_goverment_card {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.read_goverment_img {
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.data_politics_aa1 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.data_politics_aa2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.data_politics_desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+}
+
+.back_button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.back_button:hover {
+    background-color: #444;
+}

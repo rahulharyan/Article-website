@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% block content %}
+  <center>
+    <div class="government_1">
+      <div class="government_image1">
+        <img src="https://c8.alamy.com/comp/P3JB60/crime-torn-pieces-of-paper-with-the-words-crime-concept-image-black-and-white-closeup-P3JB60.jpg" alt="business" height="300px;" width="910px;" />
+      </div>
+      {% for i in article_data %}
+        <div class="government_politics">
+          <a class="government_a_tag" href="{% url 'read_crime' i.id %}">
+            <p>{{ i.id|upper }}</p>
+            <h2>{{ i.title }}</h2>
+            <p>{{ i.desc|truncatechars:200 }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </center>
+{% endblock %}

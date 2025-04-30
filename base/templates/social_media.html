@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% block content %}
+  <center>
+    <div class="social_media_1">
+      <div class="social_media_image">
+        <img src="https://www.leadwithprimitive.com/hubfs/PS_Blog_Images/2020/05_May/01_Social_Media_Management_vs_Social_Media_Marketing/Social-Media-Management-vs-Social-Media-Marketing.jpg" alt="eduaction_image" height="300px;" width="910px" />
+      </div>
+      {% for i in article_data %}
+        <div class="article_social_media">
+          <a class="social_media_a_tag" href="{% url 'read_social_media' i.id %}">
+            <p>{{ i.id }}</p>
+            <h2>{{ i.title }}</h2>
+            <p>{{ i.desc|truncatechars:200 }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </center>
+{% endblock %}

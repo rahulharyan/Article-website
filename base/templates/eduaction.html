@@ -1,0 +1,21 @@
+{% extends "main.html" %} {% block content %}
+
+
+<center>
+  <div class="eduaction_1">
+    <div class="eduaction_image">
+      <img src="https://st2.depositphotos.com/1001146/11287/i/450/depositphotos_112876072-stock-photo-black-and-white-primary-school.jpg" alt="eduaction_image" height="300px;"
+      width="910px;">
+    </div>
+    {%for i in article_data%}
+    <div class="article_eduaction">
+      <a class='eduaction_a_tag' href="{% url 'read_eduaction' i.id %}">
+        <p>{{i.id}}</p>
+      <h2>{{i.title}}</h2>
+      <p>{{i.desc | truncatechars:200}}</p>
+    </div>
+      </a>
+      {% endfor %}
+  </div>
+</center>
+ {%endblock content %}

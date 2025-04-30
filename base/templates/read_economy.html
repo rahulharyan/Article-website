@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% block content %}
+<center>
+  <div class="read_goverment_container">
+    <div class="read_goverment_card">
+
+      <img class="read_goverment_img" src="https://static.investindia.gov.in/s3fs-public/2021-11/pexels-pixabay-164636_0.jpg" alt="Government Image">
+
+      <h2 class="data_politics_aa1">PRESS-RELEASE-{{ data.id }}</h2>
+      <h2 class="data_politics_aa2">{{ data.title }}</h2>
+      <p class="data_politics_desc">{{ data.desc|safe }}</p>
+
+      <a class="back_button" href="{% url 'economy' %}">← Back to Economy</a>
+    </div>
+  </div>
+</center>
+{% endblock %}

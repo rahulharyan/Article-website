@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% block content %}
+<center>
+  <div class="read_goverment_container">
+    <div class="read_goverment_card">
+
+      <img class="read_goverment_img" src="https://media.istockphoto.com/id/950639350/photo/modern-skyscrapers-shot-with-perspective.jpg?s=612x612&w=0&k=20&c=_zaAAbcbBm1pRLTSVd7Hc-95xecFXijh0_raViUER1M=" alt="Government Image">
+
+      <h2 class="data_politics_aa1">PRESS-RELEASE-{{ data.id }}</h2>
+      <h2 class="data_politics_aa2">{{ data.title }}</h2>
+      <p class="data_politics_desc">{{ data.desc|safe }}</p>
+
+      <a class="back_button" href="{% url 'business' %}">← Back to Business</a>
+    </div>
+  </div>
+</center>
+{% endblock %}
